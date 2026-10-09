@@ -1,6 +1,6 @@
 /* =========================================================
    Enderezando Curvas · Landing de donación
-   El diseño mide 1512 de ancho x 3418 de alto (unidades del
+   El diseño mide 1512 de ancho x 3350 de alto (unidades del
    archivo de diseño). Todo se escala proporcionalmente al
    ancho de la ventana, así se ve igual en cualquier pantalla.
    ========================================================= */
@@ -8,7 +8,7 @@
 :root {
   --fondo: #fbf6ef;
   --ancho-diseno: 1512;
-  --alto-diseno: 3418;
+  --alto-diseno: 3350;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -22,7 +22,7 @@ html, body {
 .page {
   position: relative;
   width: 100%;
-  aspect-ratio: 1512 / 3418;
+  aspect-ratio: 1512 / 3350;
   container-type: inline-size;   /* habilita las unidades cqw */
   background: var(--fondo);
   overflow: hidden;
