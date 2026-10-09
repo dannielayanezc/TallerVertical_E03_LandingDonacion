@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enderezando Curvas Donaciones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  ============================================================
+  GUIA RAPIDA DE LINKS
+  ------------------------------------------------------------
+  Todos los lugares donde va un link estan marcados con:
+       LINK
+  y tienen href="#".  Solo reemplaza el "#" por la URL real.
+
+  Las imagenes (SVG) ya estan puestas con la ruta "main" de
+  GitHub; no tienes que mover nada de ellas.
+  ============================================================
+-->
+
+<main class="page">
+
+  <!-- ===== FONDO: garabatos beige de la parte de abajo ===== -->
+  <img class="el m-fondo" style="--x:0; --y:1778; --w:1512;"
+       src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/bstuff_ec.svg" alt="">
+
+  <!-- ===== COLUMNA + barra de meta ===== -->
+  <img class="el m-columna" style="--x:850; --y:64; --w:685;"
+       src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/columna_ec.svg"
+       alt="Columna vertebral con avance de la meta: $150,000 de $500,000 (20%)">
+
+  <!-- ===== NIÑA + "un camino compartido" ===== -->
+  <div class="el m-nina" style="--x:0; --y:1331; --w:1512;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/nina_ec.svg"
+         alt="Línea naranja 'un camino compartido'">
+    <!-- Foto de la niña (va encima de la línea naranja) -->
+    <img class="foto-nina"
+         src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/ninaroja_ec.svg"
+         alt="Niña sonriendo, sentada en el piso">
+  </div>
+
+
+  <!-- ===== TEXTO PRINCIPAL + botón CONOCER MÁS ===== -->
+  <div class="el m-texto" style="--x:183; --y:333; --w:541;
+       --img:url('https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/texto1_ec.svg');
+       --vw:541.18; --vh:442.63;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/texto1_ec.svg"
+         alt="Cada aportación cambia un futuro. Tu donación puede cambiar la vida de un niño con escoliosis.">
+    <!-- 🔗 LINK: botón CONOCER MÁS -->
+    <a class="crop btn" href="https://enderezandocurvas.com" target="_blank" rel="noopener" aria-label="Conocer más"
+       style="--cx:136.4; --cy:357.64; --cw:268.37; --ch:84.99; --r:42.5;"></a>
+  </div>
+
+  <!-- ===== "Dona y activa el avance" ===== -->
+  <img class="el m-cta" style="--x:178; --y:1037; --w:552;"
+       src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/cta_ec.svg"
+       alt="Dona y activa el avance. Elige cuánto donar">
+
+  <!-- ===== SELECTOR DE MONTO (verdes) =====
+       Cada botón muestra un recorte del SVG dinero1..4 que
+       corresponde al monto elegido (lo cambia script.js). -->
+  <div class="el montos m-montos" id="montos" style="--x:60; --y:1258; --w:793; --vw:793.12; --vh:97.26;">
+    <div class="ratio" style="aspect-ratio: 793.12 / 97.26;"></div>
+    <button class="crop btn monto" type="button" data-index="0" data-monto="200"
+            aria-label="Donar $200" aria-pressed="true"
+            style="--cx:0; --cy:0; --cw:158; --ch:97; --r:48.5;"></button>
+    <button class="crop btn monto" type="button" data-index="1" data-monto="500"
+            aria-label="Donar $500" aria-pressed="false"
+            style="--cx:182; --cy:0; --cw:160; --ch:97; --r:48.5;"></button>
+    <button class="crop btn monto" type="button" data-index="2" data-monto="1000"
+            aria-label="Donar $1,000" aria-pressed="false"
+            style="--cx:364; --cy:0; --cw:160; --ch:97; --r:48.5;"></button>
+    <button class="crop btn monto" type="button" data-index="3" data-monto="otra"
+            aria-label="Otra cantidad" aria-pressed="false"
+            style="--cx:550; --cy:0; --cw:243.12; --ch:97; --r:48.5;"></button>
+  </div>
+
+  <!-- 🔗 LINK: botón DONAR AHORA -->
+  <a class="el btn m-donar" id="donarAhora" href="https://enderezandocurvas.com" target="_blank" rel="noopener" aria-label="Donar ahora"
+     style="--x:254; --y:1415; --w:366;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/boton_donar_ec.svg" alt="Donar ahora">
+  </a>
+
+  <!-- ===== RECUADROS BLANCOS (documentos legales) ===== -->
+
+  <!-- 🔗 LINK: recuadro DOCUMENTOS LEGALES DEL SITIO -->
+  <a class="el card m-dl" href="https://enderezandocurvas.com" target="_blank" rel="noopener" style="--x:54; --y:2304; --w:614;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/dl_ec.svg" alt="Documentos legales del sitio">
+  </a>
+
+  <!-- 🔗 LINK: recuadro TÉRMINOS Y CONDICIONES -->
+  <a class="el card m-tc" href="https://enderezandocurvas.com" target="_blank" rel="noopener" style="--x:705; --y:2190; --w:813;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/tc_ec.svg" alt="Términos y condiciones de uso y donaciones">
+  </a>
+
+  <!-- 🔗 LINK: recuadro POLÍTICA DE DONATIVOS -->
+  <a class="el card m-pdc" href="https://enderezandocurvas.com" target="_blank" rel="noopener" style="--x:705; --y:2385; --w:813;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/pdc_ec.svg" alt="Política de donativos, cancelaciones y reembolsos">
+  </a>
+
+  <!-- 🔗 LINK: recuadro AVISO DE PRIVACIDAD -->
+  <a class="el card m-api" href="https://enderezandocurvas.com" target="_blank" rel="noopener" style="--x:705; --y:2580; --w:813;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/api_ec.svg" alt="Aviso de privacidad integral">
+  </a>
+
+  <!-- 🔗 LINK: recuadro CONTACTO DEL COMERCIO -->
+  <a class="el card m-cc" href="https://enderezandocurvas.com" target="_blank" rel="noopener" style="--x:77; --y:2849; --w:1358;
+     --img:url('https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/cc_ec.svg'); --vw:1358; --vh:228;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/cc_ec.svg" alt="Contacto: Enderezando Curvas A.C.">
+    <!-- Versión celular: las 3 columnas del contacto, una debajo de otra -->
+    <span class="crop solo-movil m-static" style="--cx:56; --cy:42; --cw:375; --ch:103;"></span>
+    <span class="crop solo-movil m-static" style="--cx:506; --cy:72; --cw:327; --ch:101;"></span>
+    <span class="crop solo-movil m-static" style="--cx:860; --cy:73; --cw:428; --ch:100;"></span>
+  </a>
+
+  <!-- ===== FOOTER (redes sociales) ===== -->
+  <footer class="el" style="--x:0; --y:3169; --w:1512;
+       --img:url('https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/footer_ec.svg');
+       --vw:1511.97; --vh:249.1;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/footer_ec.svg"
+         alt="Síguenos en nuestras redes sociales">
+    <!-- Versión celular: texto del footer -->
+    <span class="crop solo-movil m-static f-texto" style="--cx:104; --cy:50; --cw:540; --ch:132;"></span>
+
+    <!-- 🔗 LINK RED SOCIAL: FACEBOOK -->
+    <a class="crop btn m-static f-red" href="https://www.facebook.com/p/Enderezando-curvas-100084330576642/" target="_blank" rel="noopener" aria-label="Facebook"
+       style="--cx:1057.85; --cy:62.73; --cw:53.9; --ch:53.9; --r:27;"></a>
+    <!-- 🔗 LINK RED SOCIAL: INSTAGRAM -->
+    <a class="crop btn m-static f-red" href="https://www.instagram.com/enderezando_curvas/" target="_blank" rel="noopener" aria-label="Instagram"
+       style="--cx:1140.75; --cy:62.73; --cw:53.8; --ch:53.8; --r:13;"></a>
+    <!-- 🔗 LINK RED SOCIAL: TIKTOK -->
+    <a class="crop btn m-static f-red" href="https://www.tiktok.com/@enderezando.curvas" target="_blank" rel="noopener" aria-label="TikTok"
+       style="--cx:1224; --cy:63; --cw:53; --ch:53; --r:13;"></a>
+    <!-- 🔗 LINK RED SOCIAL: WHATSAPP (ícono) -->
+    <a class="crop btn m-static f-red" href="https://wa.me/5215541846939" target="_blank" rel="noopener" aria-label="WhatsApp"
+       style="--cx:1306; --cy:63; --cw:53; --ch:53; --r:13;"></a>
+    <!-- 🔗 LINK: botón CHATEAR POR WHATSAPP -->
+    <a class="crop btn m-static f-chat" href="https://wa.me/5215541846939" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp"
+       style="--cx:1124.8; --cy:139.1; --cw:197.7; --ch:43.6; --r:12.6;"></a>
+  </footer>
+
+  <!-- ===== HEADER (va al final para quedar encima de todo) ===== -->
+  <header class="el" style="--x:0; --y:-15.67; --w:1512;
+       --img:url('https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/header_ec.svg');
+       --vw:1512; --vh:127.57;">
+    <img src="https://raw.githubusercontent.com/dannielayanezc/TallerVertical_E03/main/header_ec.svg"
+         alt="Enderezando Curvas — Inicio, Escoliosis">
+    <!-- Versión celular: logo y menú -->
+    <span class="crop solo-movil m-static h-logo" style="--cx:62; --cy:16; --cw:130; --ch:94;"></span>
+    <span class="crop solo-movil m-static h-nav" style="--cx:612; --cy:44; --cw:252; --ch:34;"></span>
+
+    <!-- 🔗 LINK: botón QUIERO DONAR -->
+    <a class="crop btn m-static h-btn" href="https://enderezandocurvas.com" target="_blank" rel="noopener" aria-label="Quiero donar"
+       style="--cx:905.95; --cy:37.69; --cw:220.49; --ch:50.43; --r:12.52;"></a>
+    <!-- 🔗 LINK: botón QUIERO SER ALIADO -->
+    <a class="crop btn m-static h-btn" href="https://enderezandocurvas.com" target="_blank" rel="noopener" aria-label="Quiero ser aliado"
+       style="--cx:1170.75; --cy:37.69; --cw:259.93; --ch:50.43; --r:13.59;"></a>
+  </header>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
